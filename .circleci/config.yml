@@ -8,7 +8,7 @@ jobs:
       - run: |
           yum upgrade -y
           yum localinstall -y --nogpgcheck https://dev.mysql.com/get/mysql80-community-release-el7-3.noarch.rpm
-          yum install -y --nogpgcheck mysql-community-client tar unzip git
+          yum install -y --nogpgcheck mysql tar unzip git
       - run: |
           git version
       - run: |
